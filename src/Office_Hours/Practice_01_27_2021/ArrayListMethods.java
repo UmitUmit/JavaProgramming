@@ -14,7 +14,8 @@ public class ArrayListMethods {
         System.out.println(list);
 
         // list.remove(3);
-        list.remove( Integer.valueOf(40)  );
+
+        list.remove( Integer.valueOf( 40 )  );
         System.out.println(list.size());
         System.out.println(list);
 
