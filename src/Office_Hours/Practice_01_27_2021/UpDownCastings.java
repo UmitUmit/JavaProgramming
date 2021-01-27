@@ -1,6 +1,10 @@
 package Office_Hours.Practice_01_27_2021;
 
 import day45_Exceptions.PhoneTask.*;
+import day49_Abstraction.ShapeTask.Circle;
+import day49_Abstraction.ShapeTask.Cube;
+import day49_Abstraction.ShapeTask.Cylinder;
+import day49_Abstraction.ShapeTask.Volume;
 
 public class UpDownCastings {
 
@@ -40,6 +44,13 @@ public class UpDownCastings {
 
         ( (Samsung)phone4 ).freeze();
 
+        System.out.println("=================================");
+      //  Volume s1 = new Circle(3);
+        Volume v = new Cube(3);  // up casting
+        double area =  ( (Cube)v ).area();
+        double volume = v.volume();
+
+        System.out.println(area);
 
     }
 
