@@ -2,8 +2,7 @@ package Office_Hours.Practice_01_27_2021;
 
 
 import day45_Exceptions.PhoneTask.*;
-import day47_Abstraction.CarTask.Toyota;
-import day48_Abstraction.AnimalTask.Dog;
+
 
 public class PolymorphismPractice {
 
