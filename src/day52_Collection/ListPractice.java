@@ -35,6 +35,48 @@ public class ListPractice {
 
         List<Integer> list4 = new Stack<>();
 
+        list4.addAll(Arrays.asList(15, 25, 35, 45));
+
+        System.out.println(list4);
+
+        ((Stack<Integer>) list4).pop(); // remove 45
+
+        System.out.println(list4);
+
+        int l2 = ((Stack<Integer>) list4).pop();  //
+
+        System.out.println(list4);
+
+        ((Stack<Integer>) list4).pop();
+
+        System.out.println(list4);
+
+
+        System.out.println("======================================================");
+
+        Stack<String> names = new Stack<>();
+        names.addAll(Arrays.asList("Aysel", "Amir", "Mohammed", "Bursa", "Necdat", "Break"));
+
+        System.out.println(names);
+        names.pop();
+        System.out.println(names);
+        names.pop();
+        System.out.println(names);
+        names.pop();
+        System.out.println(names);
+        names.pop();
+        System.out.println(names);
+        names.pop();
+        System.out.println(names);
+        names.pop();
+        System.out.println(names);
+
+
+
+
+
+
+
 
     }
 
