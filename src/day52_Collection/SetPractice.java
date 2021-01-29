@@ -4,6 +4,8 @@ import java.util.*;
 
 public class SetPractice {
 
+    static String str3;
+
     public static void main(String[] args) {
 
         Set<String> names1 = new HashSet<>();
@@ -51,7 +53,39 @@ public class SetPractice {
         String s1 = new TreeSet<>(  Arrays.asList( str1.split("") ) ).toString()  ;
         String s2 =  new TreeSet<>(  Arrays.asList( str2.split("") ) ).toString()  ;
 
+        System.out.println(s1);
+        System.out.println(s2);
+
         System.out.println(s1.equals(s2));
+
+
+        System.out.println("============================================================");
+
+        // Null key:
+
+        System.out.println(str3);
+
+   //     System.out.println( str3.toUpperCase() );
+
+        HashSet<Integer> hashSet = new HashSet();
+        hashSet.addAll(Arrays.asList(null, null, null, null, null));
+
+        System.out.println(hashSet);
+
+
+        LinkedHashSet<Integer> linkedHashSet = new LinkedHashSet<>();
+        linkedHashSet.addAll(Arrays.asList(null, null, null, null, null));
+
+        System.out.println(linkedHashSet);
+
+
+        TreeSet<Integer> treeSet = new TreeSet<>();
+        treeSet.addAll(Arrays.asList(null, null, null, null, null));
+       // System.out.println(treeSet);
+
+      //  String str4 = null;
+
+      // System.out.println( str4.equals( "Muhtar" ));
 
 
 
