@@ -80,7 +80,7 @@ public class SetPractice {
 
 
         TreeSet<Integer> treeSet = new TreeSet<>();
-        treeSet.addAll(Arrays.asList(null, null, null, null, null));
+     //   treeSet.addAll(Arrays.asList(null, null, null, null, null));
        // System.out.println(treeSet);
 
       //  String str4 = null;
@@ -88,10 +88,33 @@ public class SetPractice {
       // System.out.println( str4.equals( "Muhtar" ));
 
 
+        System.out.println("=============================================");
+
+        Set<Integer>  numbers = new HashSet<>();
+        numbers.addAll( Arrays.asList(1,2,3,4,5,6,7,8,9,10,5,5,5,5,5,5,5,5,5,5)  );
+
+        int  maxNum = Collections.max(numbers);
+        int min = Collections.min(numbers);
+
+      //  Collections.sort(numbers);
+      //  Collections.swap(numbers, 0 , 1);
+
+      //  Collections.frequency(numbers,5);  //1
+
+        System.out.println("maxNum = " + maxNum);
+        System.out.println("min = " + min);
 
 
+        System.out.println("======================================================");
 
+        /*
+        dddaaaaccbb
 
+                    dacb
+                    3422
+        output:
+            d3a4c2b2
+         */
 
 
 
