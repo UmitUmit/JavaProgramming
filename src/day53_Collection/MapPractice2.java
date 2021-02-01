@@ -62,12 +62,12 @@ public class MapPractice2 {
                 System.out.println(name +"  :  "+DOB);
             }
             
-            if(DOB.isAfter(youngest)){
+            if(DOB.isAfter(youngest)){  // to find the youngest
                 youngest = DOB;
                 nameYoung = name;
             }
             
-            if(DOB.isBefore(oldest)){
+            if(DOB.isBefore(oldest)){ // to find the oldest
                 oldest = DOB;
                 nameOld = name;
             }
