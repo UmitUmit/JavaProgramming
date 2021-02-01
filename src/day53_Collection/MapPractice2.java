@@ -42,7 +42,7 @@ public class MapPractice2 {
         System.out.println("============================================================");
 
         LinkedHashMap<String, LocalDate> birthDays = new LinkedHashMap<>();
-        birthDays.put("Jimmy", LocalDate.now());
+        birthDays.put("Jimmy", LocalDate.of(2018, 2, 5));
         birthDays.put("Farzam", LocalDate.of(2010, 2, 2));
         birthDays.put("Dean", LocalDate.of(1995,3,5));
         birthDays.put("Muhtar", LocalDate.of(1976, 5, 19));
@@ -50,12 +50,33 @@ public class MapPractice2 {
         birthDays.put("Ayder", LocalDate.of(1989, 4, 4));
         birthDays.put("Ramiz", LocalDate.of(1983,3,12));
 
+        LocalDate youngest = LocalDate.of(1900,1,1);
+        String nameYoung = "";
+        
+        LocalDate oldest = LocalDate.now();
+        String nameOld = "";
+
         for (String name : birthDays.keySet()) {
             LocalDate DOB = birthDays.get(name);
             if(DOB.isBefore(LocalDate.of(1980,1,1))){
                 System.out.println(name +"  :  "+DOB);
             }
+            
+            if(DOB.isAfter(youngest)){
+                youngest = DOB;
+                nameYoung = name;
+            }
+            
+            if(DOB.isBefore(oldest)){
+                oldest = DOB;
+                nameOld = name;
+            }
+
         }
+
+
+        System.out.println("Youngest = " + nameYoung);
+        System.out.println("Oldest = " + nameOld);
 
 
 
