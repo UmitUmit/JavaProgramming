@@ -1,9 +1,6 @@
 package day53_Collection;
 
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class QueuePractice {
 
@@ -43,8 +40,18 @@ public class QueuePractice {
 
         System.out.println("======================================================");
 
+        Queue<Integer> priorityQueue = new PriorityQueue<>();
+        priorityQueue.addAll(Arrays.asList(10,12,9,8,11,5,4,7,6,3,2,1) );
 
+        System.out.println("priorityQueue = " + priorityQueue);
+        priorityQueue.poll();
+        priorityQueue.poll();
+        System.out.println("priorityQueue = " + priorityQueue);
 
+       // System.out.println( ((PriorityQueue)priorityQueue).getFirst() );
+     //   System.out.println( ((PriorityQueue)priorityQueue).getLirst() );
+
+      //  priorityQueue.add(null);
 
 
 
