@@ -55,6 +55,23 @@ public class IteratorPractice {
 
         System.out.println("================================================");
 
+        List<String> names = new ArrayList<>();
+        names.addAll(Arrays.asList(
+            "Ahmed", "ahmed", "aHmEd", "John", "Erjon", "Daniel", "Mustafa", "Mohammed"
+        ));
+
+      //  names.removeIf( p -> p.equalsIgnoreCase("ahmed"));
+
+        Iterator<String> n = names.iterator();
+        while(n.hasNext()){
+            String eachName = n.next();
+            if(eachName.equalsIgnoreCase("ahmed")){
+                n.remove();
+            }
+        }
+
+        System.out.println(names);
+
 
 
     }
