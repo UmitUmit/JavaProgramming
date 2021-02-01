@@ -88,6 +88,15 @@ public class MapPractice2 {
         countries.put("Pakistan", "Islamabad");
 
 
+        System.out.println(countries);
+
+      //  countries.values().forEach( p -> { System.out.println(p.toUpperCase()); }  );
+
+        for (String value : countries.values()) {
+            System.out.println(value.toUpperCase());
+        }
+
+
 
 
     }
