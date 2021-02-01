@@ -66,6 +66,15 @@ public class MapPractice1 {
         System.out.println(nameMin +" : "+min);
 
 
+        System.out.println("===================================");
+        System.out.println(employeeInfo);
+
+    //    employeeInfo.values().forEach( p -> { System.out.println(p); } );
+
+        for (Double eachValue : employeeInfo.values()) {
+            System.out.println(eachValue);
+        }
+
 
 
 
