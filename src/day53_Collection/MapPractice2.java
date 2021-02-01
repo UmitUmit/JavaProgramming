@@ -1,10 +1,7 @@
 package day53_Collection;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.TreeMap;
+import java.util.*;
 
 public class MapPractice2 {
 
@@ -77,6 +74,18 @@ public class MapPractice2 {
 
         System.out.println("Youngest = " + nameYoung);
         System.out.println("Oldest = " + nameOld);
+
+        System.out.println("==========================================================");
+
+        TreeMap<String, String> countries = new TreeMap<>();
+        countries.put("United States", "Washington DC");
+        countries.put("Russia", "Moscow");
+        countries.put("USA", "Washington");
+        countries.put("The Czech Republic", "Prague");
+        countries.put("España", "Madrid");
+        countries.put("Brazil","Brasilia");
+        countries.put("Germany", "Berlin");
+        countries.put("Pakistan", "Islamabad");
 
 
 
