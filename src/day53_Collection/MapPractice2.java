@@ -1,5 +1,7 @@
 package day53_Collection;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.TreeMap;
 
 public class MapPractice2 {
@@ -11,9 +13,33 @@ public class MapPractice2 {
         scores.put("Jawad", 82);
         scores.put("Munir", 64);
         scores.put("Akbar", 74);
-        scores.put("Spu",95);
+        scores.put("Spu", 95);
         scores.put("Simona",83);
         scores.put("Pedro",81);
+
+        scores.replace("Mohammad", 79);
+
+        List<String> earlyBirds = new ArrayList<>();  // >= 80
+        List<String> angryBirds = new ArrayList<>(); // <= 80
+
+      //  scores.keySet().forEach( p -> { if(scores.get(p) >= 80) earlyBirds.add(p); else angryBirds.add(p); }  );
+
+        for (String name : scores.keySet()) {
+            int score = scores.get(name);
+            if(score >= 80){
+                earlyBirds.add(name);
+            }else{
+                angryBirds.add(name);
+            }
+        }
+
+        System.out.println("earlyBirds = " + earlyBirds);
+        System.out.println("angryBirds = " + angryBirds);
+
+
+        System.out.println("============================================================");
+
+
 
 
 
