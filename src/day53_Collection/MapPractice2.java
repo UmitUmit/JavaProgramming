@@ -80,7 +80,6 @@ public class MapPractice2 {
         TreeMap<String, String> countries = new TreeMap<>();
         countries.put("United States", "Washington DC");
         countries.put("Russia", "Moscow");
-        countries.put("USA", "Washington");
         countries.put("The Czech Republic", "Prague");
         countries.put("España", "Madrid");
         countries.put("Brazil","Brasilia");
@@ -96,6 +95,28 @@ public class MapPractice2 {
             System.out.println(value.toUpperCase());
         }
 
+        System.out.println("========================================================");
+
+        // verify:
+        boolean r1 = countries.get("Russia").equals("Moscow");
+        boolean r2 = countries.containsValue("Moscow");
+
+        // find out the capital of Germany
+        System.out.println(countries.get("Germany"));
+
+        System.out.println("===========================================");
+        // find out which country' capital is "Brasilia"
+        for (String country : countries.keySet()) {
+                String capital = countries.get(country);
+                if(capital.equals("Brasilia")){
+                    System.out.println(country);
+                }
+        }
+
+        System.out.println("===========================================");
+        //  find out which country' capital is "Washington DC"
+
+        countries.keySet().forEach( p ->  { if(countries.get(p).equals("Washington DC")) System.out.println(p);  });
 
 
 
