@@ -119,6 +119,25 @@ public class MapPractice2 {
         countries.keySet().forEach( p ->  { if(countries.get(p).equals("Washington DC")) System.out.println(p);  });
 
 
+        System.out.println("================================================");
+
+        LinkedHashMap<String, Integer> sdets =new LinkedHashMap<>();
+        sdets.put("Afrooz", 150000);
+        sdets.put("Muhammad", 150000);
+        sdets.put("Ayse", 125000);
+
+        for (String key : sdets.keySet()) {
+                Integer value = sdets.get(key);
+                sdets.replace(key, value - 500 );
+        }
+
+        System.out.println("sdets = " + sdets);
+
+
+
+
+
+
 
     }
 
