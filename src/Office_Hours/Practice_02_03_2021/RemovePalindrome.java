@@ -35,6 +35,32 @@ public class RemovePalindrome {
         System.out.println(list);
 
 
+        System.out.println("===================================================================");
+
+        List<String> list2 = new ArrayList<>(Arrays.asList(words));
+        System.out.println(list2);
+
+        List<String> nonPalindroms = new ArrayList<>();
+        for (String each : list2) {
+
+            String reversed = "";
+            for(int i = each.length()-1; i >=0; i--){
+                reversed += each.charAt(i);
+            }
+
+            if(reversed.equalsIgnoreCase(each)){
+                continue;
+            }
+
+            nonPalindroms.add(each);
+
+        }
+
+
+        System.out.println(nonPalindroms);
+
+
+
     }
 
 }
