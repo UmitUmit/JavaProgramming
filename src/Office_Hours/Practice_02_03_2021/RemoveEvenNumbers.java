@@ -1,9 +1,6 @@
 package Office_Hours.Practice_02_03_2021;
 
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.*;
 
 public class RemoveEvenNumbers {
 
@@ -39,7 +36,19 @@ public class RemoveEvenNumbers {
 
         System.out.println(set);
 
+        System.out.println("=================================================");
 
+        Integer[] arr = {10,10, 11,11, 9,9, 9, 9, 5,5,5,6,7,4,3,2,1};   //[1,2,3,4,5,6,7,8,9,10]
+        arr = new TreeSet<Integer>( Arrays.asList(arr) ).toArray(new Integer[0] )  ;  // returns array
+
+        System.out.println( Arrays.toString(arr) );
+
+        System.out.println("===================================================");
+
+        String[] names = {"J", "J", "A", "A", "A", "A", "D", "C", "C", "B", "A", "A"};
+         names = new TreeSet<>(Arrays.asList(names)).toArray(new String[1]);
+
+        System.out.println( Arrays.toString(names) );
 
 
 
