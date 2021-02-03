@@ -1,17 +1,15 @@
 package Office_Hours.Practice_02_03_2021;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class RemovePalindrome {
 
     public static void main(String[] args) {
-        String[] words = {"Level", "Anna", "Java", "C#", "Python", "Nalan", "Level", "Anna", "Racecar"};
+        String[] words = {"Level", "Anna", "Java", "C#", "Python", "Nalan", "Level", "Anna", "Racecar", "Java", "Java"};
 
-        List<String> list = new ArrayList<>(Arrays.asList(words));
+       // Set<String> list = new LinkedHashSet<>(Arrays.asList(words));
+       List<String> list = new ArrayList<>(Arrays.asList(words));
 
         System.out.println(list);
 
