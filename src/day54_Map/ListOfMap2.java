@@ -49,6 +49,38 @@ public class ListOfMap2 {
         }
 
 
+        System.out.println("===========================================================");
+        String[] modelOfToyota = {"Camry","Rav4","Corolla","Land Cruiser"};
+        Integer[] yearOfToyota = {2001, 2011, 2015, 2021};
+        String[] modelOfBMW = {"M1","M3","M5","X5"};
+        Integer[] yearOfBMW = {1995, 2005, 2015, 2020};
+        String[] modelOfMercedes = {"C-Class","A-Class","SLS","GLC"};
+        Integer[] yearOfMercedes = {1990, 1995, 2015, 2021};
+
+
+        List<Map<String, Integer>> carCollection = new ArrayList<>();
+        carCollection.addAll(
+                    Arrays.asList(
+                            new TreeMap<>(),  // for mercedes
+                            new TreeMap<>(), // for toyota
+                            new TreeMap<>() // for BMW
+                    )
+        );
+
+
+        /*
+        eligible to recall:
+            BMW:
+                2011 - 2015
+
+            Mercedes:
+                1990 - 1998
+
+            Toyota:
+                1960 - 1970
+         */
+
+
 
 
 
