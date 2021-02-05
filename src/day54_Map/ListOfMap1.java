@@ -53,8 +53,22 @@ public class ListOfMap1 {
         List<Map<String, String>>  listOfMaps = new ArrayList<>();
         listOfMaps.addAll(Arrays.asList(scrum1,scrum2,scrum3,scrum4)  );
 
-
         System.out.println(listOfMaps);
+
+        System.out.println("=============================================================");
+
+        for(Map<String, String>  eachMap : listOfMaps){
+            for (Map.Entry<String, String> eachPair : eachMap.entrySet()) {
+               if(eachPair.getValue().equals("SM")){
+                   System.out.println(eachPair.getKey());
+               }
+            }
+        }
+
+
+
+
+
 
     }
 
