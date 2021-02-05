@@ -56,7 +56,7 @@ public class ListOfMap1 {
         System.out.println(listOfMaps);
 
         System.out.println("=============================================================");
-
+        // print all SM' names
         for(Map<String, String>  eachMap : listOfMaps){
             for (Map.Entry<String, String> eachPair : eachMap.entrySet()) {
                if(eachPair.getValue().equals("SM")){
@@ -65,8 +65,18 @@ public class ListOfMap1 {
             }
         }
 
+        System.out.println("========================================================");
+        // print all the developer' names
 
-
+        for(int i = 0; i < listOfMaps.size(); i++ ){
+            Map<String, String> eachMap = listOfMaps.get(i);
+            for (String name : eachMap.keySet()) {
+                    String jobTitle = eachMap.get(name);
+                if(jobTitle.equals("Developer")){
+                    System.out.println(name);
+                }
+            }
+        }
 
 
 
