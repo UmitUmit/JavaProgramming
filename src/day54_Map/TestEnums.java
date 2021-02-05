@@ -22,6 +22,16 @@ public class TestEnums {
 
 
 
+      String  monthName = "Python";
+        MonthName monthName2 = MonthName.Jan;
+
+        DaysInWeek day = DaysInWeek.Mon;
+
+        ComputerOS os = ComputerOS.MacOS;
+
+        Priority priorityLevel = Priority.Low;
+
+
 
     }
 }
