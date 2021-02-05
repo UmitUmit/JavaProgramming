@@ -31,6 +31,16 @@ public class TestEnums {
 
         Priority priorityLevel = Priority.Low;
 
+        System.out.println("===========================================");
+        String string = "Cybertek";
+        string.concat(" School"); // "Cybertek School"
+        System.out.println(string);  // "Cybertek"
+
+        StringBuilder stringBuilder = new StringBuilder("Cybertek");
+        stringBuilder.append(" School");
+        stringBuilder.reverse();
+        System.out.println(stringBuilder);
+
 
 
     }
