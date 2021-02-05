@@ -1,6 +1,7 @@
 package day54_Map;
 
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class EntrySetPractice {
 
@@ -12,12 +13,39 @@ public class EntrySetPractice {
         students.put("D", 87);
         students.put("E", 88);
 
+        System.out.println(students);
+
         System.out.println("=======================================");
-        for (String each : students.keySet()) {
-            
+        for (String eachKey : students.keySet()) {
+            System.out.println(eachKey +" : "+students.get(eachKey));
         }
-        
-        
+
+        System.out.println("=======================================");
+        for (Integer eachValue : students.values()) {
+            System.out.println(eachValue);
+        }
+
+        System.out.println("======================================");
+
+         for( Map.Entry<String, Integer> each   : students.entrySet() ){
+             System.out.println(each.getKey() +" : "+each.getValue());
+         }
+
+
+
+        /*
+        for (Map.Entry<String, Integer> each : students.entrySet()) { // each: each pair of data
+            String eachKey = each.getKey();
+            Integer eachValue = each.getValue();
+
+            System.out.println(eachKey +" : "+eachValue);
+
+        }
+
+         */
+
+
+
     }
     
 }
