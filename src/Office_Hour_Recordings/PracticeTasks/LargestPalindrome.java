@@ -1,4 +1,4 @@
-package Office_Hour_Recordings;
+package Office_Hour_Recordings.PracticeTasks;
 
 import java.util.ArrayList;
 
