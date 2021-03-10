@@ -35,32 +35,66 @@ public class ListOfMap {
         maps.addAll( Arrays.asList(group1, group2, group3));
 
         System.out.println(maps);
+        System.out.println("=====================================");
 
-        // who has the maximum salary?
-        int max = 0;
-        String name = "";
+        // who has the maximum salary and minimum salary?
+        int max = Integer.MIN_VALUE;  // 125000
+        String name = ""; //Bethany
+
+        int min = Integer.MAX_VALUE;
+        String name2 = "";
 
        for( Map<String, Integer>  eachMap  : maps){
            for (Map.Entry<String, Integer> each : eachMap.entrySet()) {
+
                if(each.getValue() > max){
                    max = each.getValue();
                    name = each.getKey();
                }
+
+               if(each.getValue() < min){
+                   min = each.getValue();
+                   name2 = each.getKey();
+               }
+
            }
        }
 
+        System.out.println(name + " : "+max);
+        System.out.println(name2 + " : "+min);
 
 
+        System.out.println("==========================================================");
 
-        // who has the minimum salary?
+
 
         /*
             display the salaries of each of the employee after the tax
                 total tax rates:
-                        for employees making more than  100K: 32%
-                        for employees making less than 100K: 25%
+                        for employees making more than  100K: 32% ==> 68%
+                        for employees making less than 100K: 25% ==>  75%
          */
 
+        LinkedHashMap<String, Double> taxes = new LinkedHashMap<>();
+        LinkedHashMap<String, Double> salariesAfterTax = new LinkedHashMap<>();
+
+        for( Map<String, Integer>  eachMap  : maps) {
+            for (Map.Entry<String, Integer> each : eachMap.entrySet()) {
+                String names = each.getKey();
+                Integer salary = each.getValue();
+                double salaryAfterTax = (salary >= 100000) ? salary * 0.68 :  salary * 0.75;
+                double tax = salary - salaryAfterTax;
+
+                salariesAfterTax.put(names, salaryAfterTax);
+                taxes.put(names, tax);
+
+            }
+        }
+
+
+        System.out.println(salariesAfterTax);
+
+        System.out.println(taxes);
 
 
 
