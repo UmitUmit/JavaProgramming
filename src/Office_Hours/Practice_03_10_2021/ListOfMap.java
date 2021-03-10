@@ -6,7 +6,7 @@ public class ListOfMap {
 
     public static void main(String[] args) {
         String[] namesGroup1 = {"Oliver", "Jack", "Noah", "Breanna", "Shay","James", "Conor", "Jake", "John"};
-        Integer[] salariesGroup1 = {11000, 105000, 95000, 85000, 100000, 90000, 78000, 118000, 98000};
+        Integer[] salariesGroup1 = {110000, 105000, 95000, 85000, 100000, 90000, 78000, 118000, 98000};
         LinkedHashMap<String, Integer> group1 = new LinkedHashMap<>();
 
         for(int i = 0; i < namesGroup1.length; i++ ){
@@ -19,7 +19,7 @@ public class ListOfMap {
         LinkedHashMap<String, Integer> group2 = new LinkedHashMap<>();
 
         for(int i = 0; i < namesGroup2.length; i++ ){
-            group1.put( namesGroup2[i],  salariesGroup2[i] );
+            group2.put( namesGroup2[i],  salariesGroup2[i] );
         }
 
         String[] namesGroup3 = {"Bethany", "Emily", "Susan", "Smith", "Murphy" };
@@ -27,13 +27,31 @@ public class ListOfMap {
         LinkedHashMap<String, Integer> group3 = new LinkedHashMap<>();
 
         for(int i = 0; i < namesGroup3.length; i++ ){
-            group1.put( namesGroup3[i],  salariesGroup3[i] );
+            group3.put( namesGroup3[i],  salariesGroup3[i] );
         }
 
 
-        List<Map<String, Integer>>  maps = new ArrayList<>();  // add all the groups into the list of map
+        List< Map<String, Integer> >  maps = new ArrayList<>();  // add all the groups into the list of map
+        maps.addAll( Arrays.asList(group1, group2, group3));
+
+        System.out.println(maps);
 
         // who has the maximum salary?
+        int max = 0;
+        String name = "";
+
+       for( Map<String, Integer>  eachMap  : maps){
+           for (Map.Entry<String, Integer> each : eachMap.entrySet()) {
+               if(each.getValue() > max){
+                   max = each.getValue();
+                   name = each.getKey();
+               }
+           }
+       }
+
+
+
+
         // who has the minimum salary?
 
         /*
