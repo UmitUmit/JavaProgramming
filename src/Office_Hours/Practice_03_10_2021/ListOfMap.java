@@ -10,6 +10,7 @@ public class ListOfMap {
         LinkedHashMap<String, Integer> group1 = new LinkedHashMap<>();
 
 
+
         String[] namesGroup2 = {"Harry", "Callum", "Mason", "Robert", "Keyle", "Isabella", "Mary", "Joe"};
         Integer[] salariesGroup2 = {88000, 94000, 104000, 108000, 98000, 105000, 85000, 100000};
         LinkedHashMap<String, Integer> group2 = new LinkedHashMap<>();
@@ -22,6 +23,16 @@ public class ListOfMap {
 
 
         List<Map<String, Integer>> maps = new ArrayList<>();  // add all the groups into the list of map
+
+        // who has the maximum salary?
+        // who has the minimum salary?
+
+        /*
+            display the salaries of each of the employee after the tax
+                total tax rates:
+                        for employees making more than  100K: 32%
+                        for employees making less than 100K: 25%
+         */
 
 
 
