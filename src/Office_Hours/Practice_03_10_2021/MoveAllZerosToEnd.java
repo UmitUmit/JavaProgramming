@@ -1,9 +1,6 @@
 package Office_Hours.Practice_03_10_2021;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class MoveAllZerosToEnd {
     public static void main(String[] args) {
@@ -57,6 +54,33 @@ public class MoveAllZerosToEnd {
          */
 
         System.out.println(Arrays.toString(newArray));
+
+
+        System.out.println("==========================================");
+
+        List<Integer> list2 = new ArrayList<>(Arrays.asList(0,0,0,0,0,0, 0 ,4,3,2,3,0,2,0,1,0));  // [3,2,1,0,0,0]
+
+        int totalNumberOfZeros2 = Collections.frequency(list2, 0);  // 3
+
+     //   list2.removeAll(Arrays.asList(0));  // [3,2,1]
+
+        Iterator<Integer> iterate = list2.iterator();
+        while(iterate.hasNext()){
+            if(iterate.next() == 0){
+                iterate.remove();
+            }
+        }
+
+
+
+        for (int i = 0; i < totalNumberOfZeros2; i++) {
+            list2.add(0);
+        }
+
+
+        System.out.println(list2);
+
+
 
 
     }
