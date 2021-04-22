@@ -2,7 +2,7 @@ package bootCamp;
 
 public class MethodPractice {
 
-    public static void main(String[] args) {
+    public  static void main(String[] args) {
 
         // print "Puzzle"   without using ;
         if(System.out.printf("Puzzel").equals( null )){
