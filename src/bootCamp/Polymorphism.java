@@ -2,9 +2,11 @@ package bootCamp;
 
 import java.util.*;
 
-public class Polymorphism {
+public class Polymorphism extends RuntimeException {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Polymorphism {
+
+        // new Polymorphism().finalize();
 
        // List<Integer> list = new HashSet<Integer>();
 
@@ -26,6 +28,8 @@ public class Polymorphism {
 
         String s1 = "Java";
         Object obj2 = s1;
+
+        throw new  Polymorphism();
 
 
     }

@@ -26,6 +26,10 @@ public class ArrayPractice {
        //  [1, 0, 0]
 
 
+        String str = null;
+
+        System.out.println(str.toUpperCase()); //NULL
+
 
     }
 }
